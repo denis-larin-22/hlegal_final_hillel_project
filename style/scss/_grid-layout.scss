@@ -1,0 +1,49 @@
+.coll-wrap {
+    margin: 0 -10px;
+}
+.coll-lg-3 {
+    flex: 0 0 auto;
+    width: calc(100% / 4);
+}
+
+.coll-lg-4 {
+    flex: 0 0 auto;
+    width: calc(100% / 3);
+    padding: 0 10px;
+}
+
+.coll-lg-6 {
+    flex: 0 0 auto;
+    width: calc(100% / 2);
+    padding: 0 10px;
+}
+
+.coll-lg-8 {
+    flex: 0 0 auto;
+    width: 60%;
+    padding: 0 10px;
+}
+
+
+@media screen and (max-width: $sm) {
+    
+    .coll-sm-6 {
+        flex: 0 0 auto;
+        width: 50%;
+        padding: 0 10px;
+    }
+
+    .coll-sm-12 {
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: $exsm) {
+    .coll-exsm-12 {
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,59 @@
+// DONE
+.main {
+    &__text {
+        @extend %gradient-text-accent;
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: 60px 0;
+        @media screen and (max-width: $lg) {
+            max-width: 1080px;
+        }
+        @media screen and (max-width: $md) {
+            max-width: 664px;
+        }
+        @media screen and (max-width: $exsm) {
+            @include font-setting (700, 30px, 37px);
+        }
+    }
+}
+
+.staff {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px;
+    gap: 60px 0;
+    padding-bottom: 60px;
+    &__card {
+        min-height: 400px;
+    }
+    &__photo {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: $b-radius;
+        margin-bottom: 15px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link {
+        @extend %animation-hover;
+        &:hover {
+            color: $accent;
+        }
+    }
+    &__position {
+        @include font-setting (400, 14px, 22px);
+        padding-top: 5px;
+    }
+    &__link-arrow {
+        &:hover .staff__circle {
+            fill: $grey-bg-alt;
+        }
+        &:hover .staff__arrow {
+            stroke: $accent;
+        }
+    }
+}

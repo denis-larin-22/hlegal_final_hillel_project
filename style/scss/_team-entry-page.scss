@@ -1,0 +1,88 @@
+// DONE
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main-wrap {
+    flex-grow: 1;
+}
+
+.employee {
+    padding: 65px 0 60px 0;
+    max-width: 1360px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "photo info" "photo separator" "photo text";
+    gap: 0 60px;
+    @media screen and (max-width: $sm) {
+        grid-template-columns: 1fr 318px;
+        align-items: center;
+        grid-template-areas: "photo info" "separator separator" "text text";
+        gap: 0 5px;
+    }
+    @media screen and (max-width: 650px) {
+        grid-template-areas: "photo photo" "info info" "separator separator" "text text";
+        padding: 30px 0;
+    }
+    &__img {
+        grid-area: photo;
+        max-width: 400px;
+        min-height: 500px;
+        object-fit: cover;
+        border-radius: $b-radius;
+        @media screen and (max-width: $md) {
+            max-width: 300px;
+            min-height: 375px;
+        }
+        @media screen and (max-width: 650px) {
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+    }
+    &__info-wrap {
+        grid-area: info;
+    }
+    &__h1 {
+        @extend %gradient-text-accent;
+        padding-bottom: 15px;
+    }
+    &__contacts {
+        display: flex;
+        @media screen and (max-width: $md)  {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    &__mail {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 10px;
+        &::before, &::after {
+            content: '';
+            @extend %circle;
+            background-color: $grey-text;
+        }
+        @media screen and (max-width: $md)  {
+            padding: 0px;
+            &::before, &::after {
+                display: none;
+            }
+        }
+    }
+    &__text-wrap {
+        grid-area: text;
+    }
+    &__pb30 {
+        padding-bottom: 30px;
+    }
+    &__h3 {
+        padding: 30px 0 15px 0;
+    }
+}
+.separator {
+    border-bottom: 4px solid $grey-separator;
+    margin: 30px 0;
+    grid-area: separator;
+}

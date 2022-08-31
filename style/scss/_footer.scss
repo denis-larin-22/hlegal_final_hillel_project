@@ -1,0 +1,103 @@
+.footer-wrap {
+    background-color: $grey-bg;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 32px 0 30px 0;
+    @media screen and (max-width: $sm) {
+        align-items: center;        
+        flex-direction: column;
+        gap: 30px 0;
+    }
+    &__location {
+      display: flex;
+      align-items: center;
+      padding-bottom: 21px;
+    }
+    &__city {
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        gap: 0 10px;
+        &::after {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $grey-text;
+        }
+    }
+    &__link-map {
+        color: $blue-regular;
+    }
+    &__contacts {
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+    }
+    &__call {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        gap: 0 10px;
+        color: $indigo-alt;
+        &::before {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $grey-text;
+        }
+        &::after {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $grey-text;
+        }
+    }
+    &__link-mail {
+        color: $blue-regular;
+    }
+    &__copyright {
+        color: $grey-text;
+        @media screen and (max-width: $sm) {
+            text-align: center;
+        }
+    }
+  }
+
+// mobile breakepoint
+
+@media screen and (max-width: $exsm) {
+    .footer {
+        &__city {
+            &::after {
+                display: none;
+            }
+        }
+        &__location {
+            flex-direction: column;
+            gap: 10px 0;
+        }
+        &__contacts {
+            flex-direction: column;
+            gap: 10px 0;
+        }
+        &__call {
+            &::after{
+                display: none;
+            }
+            &::before {
+                display: none;
+            }
+        }
+    }
+    
+}

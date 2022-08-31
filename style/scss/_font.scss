@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@mixin font-setting ($w, $s, $l) {
+    font-weight: $w;
+    font-size: $s;
+    line-height: $l;
+}
+
+// font-settings
+
+.lg {
+    @include font-setting (700, 38px, 46px)
+}
+
+.h-2 {
+    @include font-setting (700, 30px, 36px);
+}
+
+.h-3 {
+    @include font-setting (700, 22px, 26px); 
+}
+
+.h3-caps {
+    @include font-setting (700, 14px, 17px);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.h-4 {
+    @include font-setting (700, 16px, 19px);
+}
+
+.text-regular {
+    @include font-setting (400, 16px, 26px);
+}
+
+.text-list {
+    @include font-setting (400, 18px, 26px);
+}
+
+.text-link{
+    @include font-setting (400, 16px, 20px);
+}
+
+.page-name {
+    @include font-setting (400, 36px, 43px);
+    @media screen and (max-width: $exsm) {
+        @include font-setting (400, 20px, 24px);
+    }
+}
+
+.slider-text {
+    @include font-setting (400, 19px, 30px);
+}
+
+.contact-text {
+    @include font-setting (400, 21px, 30px);
+}
+
+.footer-style-text {
+    @include font-setting (400, 16px, 20px);
+}

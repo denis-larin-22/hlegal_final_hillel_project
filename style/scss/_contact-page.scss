@@ -1,0 +1,94 @@
+.page-wrap {
+    min-height: 100vh;
+}
+.contact {
+    max-width: 1360px;
+    @media screen and (max-width: $lg) {
+        max-width: 1080px;
+    }
+    margin: 0 auto;
+    padding: 60px 0;
+    @media screen and (max-width: $sm) {
+        gap: 60px 0;
+        padding-top: 30px;
+    }
+    &__info {
+        margin: 0 -10px;
+    }
+    &__city {
+        padding-bottom: 30px;
+    }
+    &__call {
+        padding: 30px 0 15px 0;
+        border-top: 4px solid $grey-separator;
+    }
+    &__mail {
+        padding-bottom: 30px;
+        border-bottom: 4px solid $grey-separator;
+    } 
+    &__link {
+        margin-top: 30px;
+        gap: 0 10px;
+        &-text {
+            @include font-setting (700, 12px, 16px);
+            text-transform: uppercase;
+        }
+        & path {
+            @extend %animation-hover;
+        }
+        &:hover path {
+            fill: $accent;
+        }
+    }
+    // Form
+    &__form {
+        padding: 30px;
+        background-color: $grey-bg;
+        border-radius: $b-radius;
+    }
+}
+
+.form {
+    &-control {
+        border: none;
+        background-color: $white;
+        color: $grey-text;
+        border: 1px solid transparent;
+        &:focus {
+            color: rgba(0, 0, 0, 1);
+            border: 1px solid #24A3FF;
+            border-radius: 8px;
+            box-shadow: none;
+        }
+        // &:invalid {
+        //     color: rgba(255, 0, 0, 1);
+        //     border: 1px solid rgba(255, 0, 0, 1);
+        // }
+        &:disabled {
+            background: $grey-bg;
+        }
+    }
+    &__name, &__call, &__mail {
+        height: 56px;
+    }
+    &__message {
+        height: 130px;
+        vertical-align: sub;
+    }
+    &__text {
+        text-transform: uppercase;
+        color: $grey-text;
+    }
+    &__btn {
+        border: none;
+        width: 100%;
+        &:hover {
+            transform: scale(1.03);
+            background-color: $blue-hover;
+        }
+        &:active {
+            background-color: $blue-active;
+        }
+    }
+}
+

@@ -1,0 +1,28 @@
+.theme-dark {
+    color: $white;
+}
+
+.theme-light-text-indigo {
+    color: $indigo-main;
+}
+.theme-light-text-gray {
+    color: $grey-text;
+}
+
+.theme-light-logo {
+    fill: $indigo-main;
+    color: $indigo-main;
+}
+
+.theme-light-facebook {
+    fill: $grey-text;
+}
+
+.theme-light-link {
+    color: $blue-regular;
+}
+
+.theme-text-gradient {
+    @extend %gradient-text-accent;
+}
+

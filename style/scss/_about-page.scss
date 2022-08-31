@@ -1,0 +1,68 @@
+.page-about {
+    gap: 30px 0;
+    &-wrap {
+        max-width: 1360px;
+        @media screen and (max-width: $lg) {
+            max-width: 1080px;
+        }
+        margin: 0 auto;
+        padding: 60px 0;
+        @media screen and (max-width: $exsm) {
+            padding: 30px 0;
+        }
+    }
+    &__h1 {
+        @media screen and (max-width: $exsm) {
+            @include font-setting (700, 30px, 36px);
+        }
+    }
+}
+
+.benefits {
+    gap: 40px 0;
+    padding-left: 30px;
+    border-left: 4px solid $grey-separator;
+    @media screen and (max-width: $sm) {
+        margin-left: 10px;
+    }
+    &__item {
+        gap: 0 12px;
+        padding-bottom: 10px;
+    }
+    &__text {
+        max-width: 354px;
+    }
+}
+
+.team {
+    max-width: $exlg;
+    margin: 0 auto;
+    position: relative;
+    &__image {
+        width: 100%;  
+    }
+    &__text {
+        @include font-setting (700, 96px, 117px);
+        text-transform: uppercase;
+        letter-spacing: 63px;
+        color: rgba(255, 255, 255, 1);
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+        position: absolute;
+        left: calc(50% - 478px/2);
+        top: calc(50% - 117px/2 + 2.5px);
+        @media screen and (max-width: $md) {
+            @include font-setting (700, 86px, 104px);
+        }
+        @media screen and (max-width: $sm) {
+            @include font-setting (700, 46px, 56px);
+            left: calc(50% - 328px/2);
+            top: calc(50% - 56px/2 + 0.2px);
+        }
+        @media screen and (max-width: $exsm) {
+            @include font-setting (700, 36px, 44px);
+            letter-spacing: 13px;
+            left: calc(50% - 148px/2);
+            top: calc(50% - 44px/2 - 0.03px);
+        }
+    }
+}

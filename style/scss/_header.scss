@@ -1,0 +1,274 @@
+a {
+    @extend %animation-hover;
+    &:hover {
+        color: $accent;
+    }
+}
+.header {
+    width: 100%;
+    padding: 45px 0 0 0;
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-areas: "logo-content panel" "logo-content navigation";
+    gap: 21px 0;
+    // Применил mw:810px потому как уже с 950px header начинает ломаться
+    @media screen and (max-width: 950px) {
+        grid-template-areas: "panel" "logo-content" "navigation";
+        justify-content: flex-start;
+    }
+    @media screen and (max-width: $exsm) {
+        justify-content: space-between;
+        grid-template-areas: "panel panel" "logo-content navigation";
+    }
+    &__logo {
+        grid-area: logo-content;
+        display: flex;
+        align-items: flex-start;
+        gap: 0 4px;
+        &_size {
+            width: 130px;
+            height: 60px;
+            @media screen and (max-width: $exsm) {
+                width: 69px;
+                height: 32px; 
+            }
+        }
+    }
+    &__slash {
+        width: 21px;
+        height: 47px;
+        @media screen and (max-width: $exsm) {
+            width: 12px;
+            height: 26px;
+        }
+    }
+    &__panel {
+        grid-area: panel;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__navigation {
+        grid-area: navigation;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: end;
+        @media screen and (max-width: 810px) {
+            justify-content: start;
+        }
+        @media screen and (max-width: $exsm) {
+            display: none;
+        }
+    }
+
+    &__city {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        &::before {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $white;
+        }
+    }
+    &__call {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        &::before {
+            content: '';
+            @extend %circle;
+        }
+        &::after {
+            content: '';
+            @extend %circle;
+        }
+    }
+// точки
+    &-circle-start_grey {
+        &::before {
+            content: '';
+            @extend %circle;
+            background-color: $grey-separator;
+        }
+    }
+    &-circle_grey {
+        &::before {
+            content: '';
+            @extend %circle;
+            background-color: $grey-separator;
+        }
+        &::after {
+            content: '';
+            @extend %circle;
+            background-color: $grey-separator;
+        }
+    }
+
+    &__facebook_hover {
+        transition: .5s ease;
+        &:hover {
+            fill: $accent;
+        }
+    }
+    
+    &__link {
+        transition: 0.2s linear;
+        padding-bottom: 3px;
+        border-bottom: 2px solid transparent;
+        color: $white;
+        &:hover {
+            color: $accent;
+            padding-bottom: 3px;
+            border-bottom: 2px solid $accent;
+        }
+        @media screen and (max-width: $exsm) {
+            width: 100%;
+            text-align: center;
+            color: $blue-regular;
+            background-color: $grey-bg;
+            border-radius: $b-radius;
+            padding: 7px 0;
+            &:hover {
+                background-color: $grey-bg-alt;
+                color: $accent;
+                padding: 7px 0;
+                border: none;
+            }
+        }
+    }
+}
+
+.lang {
+    background-color: transparent;
+    padding: 5px 7px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s linear;
+    @include font-setting (700, 12px, 14px);
+    letter-spacing: 1px;
+    &:hover {
+        background-color:rgba(255, 255, 255, 0.2);
+    }
+    &:active {
+        background-color: $accent;
+    }
+    &_active {
+        background-color: $accent;
+    }
+}
+
+.link_active {
+    color: $accent;
+    padding-bottom: 3px;
+    border-bottom: 2px solid $accent;
+    @media screen and (max-width: $sm) {
+        border:  none;
+        padding-bottom: 3px;
+        border-bottom: 2px solid $accent;
+    }
+    @media screen and (max-width: $exsm) {
+        border:  none;
+        padding-bottom: 7px;
+    }
+}
+
+@media screen and (max-width: $exsm) {
+    .header {
+        padding: 0;
+        &__panel {
+            position: relative;
+            padding: 10px 0;
+            justify-content: space-between;
+            &::after {
+                content: '';
+                position: absolute;
+                height: 45px;
+                width: 100vw;
+                left: -15px;
+                background-color: rgba(245, 245, 250, 0.2);
+                z-index: -1;
+            }
+        }
+        &__city {
+            display: none;
+        }
+        &__facebook {
+            display: none;
+        }
+        &__call { 
+            &::before, &::after {
+                display: none;
+            }
+        }
+        &__logo-content {
+            max-height: 57px;
+        }
+    }
+}
+// display: none
+.mark-dn {
+    display: none;
+    @media screen and (max-width: $exsm) {
+        display: inline-block;
+        justify-self: end;
+    }
+}
+ 
+// canvas
+.nav-canvas {
+    gap: 15px;
+    width: 100%;
+}
+  
+.offcanvas {
+    border-top-left-radius: $b-radius;
+    border-top-right-radius: $b-radius;
+    max-width: 100%;
+    min-height: 40vh;
+    margin: 0 8px;
+    &.offcanvas-bottom {
+        height: auto;
+    }
+    @media screen and (min-width: 577px) {
+      &.offcanvas-bottom {
+        border: none;
+        position: static;
+        transform: translate(0);
+        min-height: auto;
+        transform: translate(0);
+        visibility: visible;
+        background-color: transparent;
+      }
+      .offcanvas-header {
+        padding: 0;
+      }
+      .btn-close {
+        display: none;
+      }
+      .nav-canvas {
+        margin-top: 0;
+        justify-content: flex-end;
+      }
+    }
+    .offcanvas-header, .nav-canvas  {
+        @media screen and (max-width: $exsm) {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    .nav-canvas  {
+        @media screen and (max-width: 950px) {
+            justify-content: flex-start;
+        }
+    }
+}
+  

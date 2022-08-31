@@ -1,0 +1,30 @@
+%arrow {
+    content: '';
+    border: 2px solid $accent;
+    border-width: 0 2px 2px 0;
+    transform: rotate(-45deg);
+    display: inline-block;
+    padding: 3px;
+    margin-left: 5px;
+    vertical-align: initial;
+}
+
+%circle {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $white;
+}
+
+%gradient-text-accent {
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+%animation-hover {
+    transition: 0.5s ease;
+}
+
