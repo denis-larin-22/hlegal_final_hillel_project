@@ -73,7 +73,7 @@
                 </svg>
                 <h2 class="page-name theme-light-logo">publications</h2>
             </div>
-            <div class="header__panel">
+            <div class="header__panel header__panel-light">
                 <div class="header__lang">
                     <button class="lang theme-light-text-gray">УК</button>
                     <button class="lang theme-light-text-gray">РУ</button>
@@ -120,123 +120,162 @@
 
     <div class="section-cards-wrap">
         <div class="container">
-            <section class="cards publication">
-                <div class="flex-cards">
-                    <div class="coll-lg-4 coll-sm-6 coll-exsm-12">
-                        <div class="card publication__card">
-                            <img src="../assets/publications-page/Publication-1.png" alt="Equity associate"
-                                class="card__img publication__img">
-                            <div class="card__content">
-                                <a href="" class="publication__link card__h4 h-4">Equity associate
-                                </a>
-                                <h5 class="card__h5">April 22</h5>
-                                <p class="card__text">I'm a jun on projects. I am a co-owner of a law firm. How it
-                                    happened. Before entering my parents told me that if I…</p>
+            <div class="tabs d-flex flex-column align-items-center">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active h-4" id="pills-news-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-news" type="button" role="tab" aria-controls="pills-news"
+                            aria-selected="true">news</button>
+                    </li>
+                    <li class="nav-item h-4" role="presentation">
+                        <button class="nav-link" id="pills-articles-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-articles" type="button" role="tab" aria-controls="pills-articles"
+                            aria-selected="false">articles</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-news" role="tabpanel"
+                        aria-labelledby="pills-news-tab">
+                        <section class="cards publication">
+                            <div class="flex-cards">
+                                <div class="coll-lg-4 coll-sm-6 coll-exsm-12">
+                                    <div class="card publication__card">
+                                        <img src="../assets/publications-page/Publication-1.png" alt="Equity associate"
+                                            class="card__img publication__img">
+                                        <div class="card__content">
+                                            <a href="" class="publication__link card__h4 h-4">Equity associate
+                                            </a>
+                                            <h5 class="card__h5">April 22</h5>
+                                            <p class="card__text">I'm a jun on projects. I am a co-owner of a law firm.
+                                                How
+                                                it
+                                                happened. Before entering my parents told me that if I…</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="coll-lg-4 coll-sm-6 coll-exsm-12">
+                                    <div class="card publication__card">
+                                        <img src="../assets/publications-page/Publication-2.png" alt="Equity associate"
+                                            class="card__img publication__img">
+                                        <div class="card__content">
+                                            <a href="../pages/publication-entry-page.html"
+                                                class="publication__link card__h4 h-4">Penalty for the Good Corporation:
+                                                what
+                                                will happen to Google and others for violating the GDPR
+                                            </a>
+                                            <h5 class="card__h5">September 29</h5>
+                                            <p class="card__text">And why the recovery of 50 million euros could be a
+                                                fateful
+                                                precedent According to
+                                                Mind.ua January 21 National Commission for Data Protection.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="coll-lg-4 coll-sm-6 coll-exsm-12">
+                                    <div class="card publication__card">
+                                        <img src="../assets/publications-page/Publication-3.png" alt="Equity associate"
+                                            class="card__img publication__img">
+                                        <div class="card__content">
+                                            <a href="" class="publication__link card__h4 h-4">Millennial Testament
+                                            </a>
+                                            <h5 class="card__h5">August 19</h5>
+                                            <p class="card__text">What and how modern vloggers, opinion leaders and
+                                                crypto-millionaires will inherit A typical legacy of the Ukrainian
+                                                generation X
+                                                looks like this: an apartment in…</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="coll-lg-4 coll-sm-6 coll-exsm-12">
+                                    <div class="card publication__card">
+                                        <img src="../assets/publications-page/Publication-4.png" alt="Equity associate"
+                                            class="card__img publication__img">
+                                        <div class="card__content">
+                                            <a href="" class="publication__link card__h4 h-4">Language Law: How to Make
+                                                Your
+                                                Website
+                                                Relevant
+                                            </a>
+                                            <h5 class="card__h5">August 19</h5>
+                                            <p class="card__text">Natalia Kyryk, head of content studio Wordfactory.ua
+                                                First, it's
+                                                beautiful! This is the number one argument in favor of the
+                                                Ukrainian-language site.
+                                                Secondly, it is effective. IN…</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="coll-lg-4 coll-sm-6 coll-exsm-12">
+                                    <div class="card publication__card">
+                                        <img src="../assets/publications-page/Publication-5.png" alt="Equity associate"
+                                            class="card__img publication__img">
+                                        <div class="card__content">
+                                            <a href="" class="publication__link card__h4 h-4">Reimbursement of the
+                                                child's
+                                                tuition
+                                                fees in kindergarten and school
+                                            </a>
+                                            <h5 class="card__h5">February 5, 2018</h5>
+                                            <p class="card__text">What we are talking about In June this year, the
+                                                Verkhovna
+                                                Rada
+                                                amended the Tax Code of Ukraine. From now on, parents who receive an
+                                                official…</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="coll-lg-4 coll-sm-6 coll-exsm-12">
+                                    <div class="card publication__card">
+                                        <div class="card__content mt-30">
+                                            <a href="" class="publication__link card__h4 h-4">Currency control is dead,
+                                                long
+                                                live
+                                                currency control!
+                                            </a>
+                                            <h5 class="card__h5">June 14, 2018</h5>
+                                            <p class="card__text">Experts hold conferences, round tables and other
+                                                events on
+                                                "liberalization of currency legislation." Lawyers-experts-novelists rub
+                                                their
+                                                fingers about "ctrl + c / ctrl + v".</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            <a href="" class="publication__link btn-blue h-4">More publications</a>
+                        </section>
                     </div>
-                    <div class="coll-lg-4 coll-sm-6 coll-exsm-12">
-                        <div class="card publication__card">
-                            <img src="../assets/publications-page/Publication-2.png" alt="Equity associate"
-                                class="card__img publication__img">
-                            <div class="card__content">
-                                <a href="../pages/publication-entry-page.html"
-                                    class="publication__link card__h4 h-4">Penalty for the Good Corporation: what
-                                    will happen to Google and others for violating the GDPR
-                                </a>
-                                <h5 class="card__h5">September 29</h5>
-                                <p class="card__text">And why the recovery of 50 million euros could be a fateful
-                                    precedent According to
-                                    Mind.ua January 21 National Commission for Data Protection.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coll-lg-4 coll-sm-6 coll-exsm-12">
-                        <div class="card publication__card">
-                            <img src="../assets/publications-page/Publication-3.png" alt="Equity associate"
-                                class="card__img publication__img">
-                            <div class="card__content">
-                                <a href="" class="publication__link card__h4 h-4">Millennial Testament
-                                </a>
-                                <h5 class="card__h5">August 19</h5>
-                                <p class="card__text">What and how modern vloggers, opinion leaders and
-                                    crypto-millionaires will inherit A typical legacy of the Ukrainian generation X
-                                    looks like this: an apartment in…</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coll-lg-4 coll-sm-6 coll-exsm-12">
-                        <div class="card publication__card">
-                            <img src="../assets/publications-page/Publication-4.png" alt="Equity associate"
-                                class="card__img publication__img">
-                            <div class="card__content">
-                                <a href="" class="publication__link card__h4 h-4">Language Law: How to Make Your Website
-                                    Relevant
-                                </a>
-                                <h5 class="card__h5">August 19</h5>
-                                <p class="card__text">Natalia Kyryk, head of content studio Wordfactory.ua First, it's
-                                    beautiful! This is the number one argument in favor of the Ukrainian-language site.
-                                    Secondly, it is effective. IN…</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coll-lg-4 coll-sm-6 coll-exsm-12">
-                        <div class="card publication__card">
-                            <img src="../assets/publications-page/Publication-5.png" alt="Equity associate"
-                                class="card__img publication__img">
-                            <div class="card__content">
-                                <a href="" class="publication__link card__h4 h-4">Reimbursement of the child's tuition
-                                    fees in kindergarten and school
-                                </a>
-                                <h5 class="card__h5">February 5, 2018</h5>
-                                <p class="card__text">What we are talking about In June this year, the Verkhovna Rada
-                                    amended the Tax Code of Ukraine. From now on, parents who receive an official…</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="coll-lg-4 coll-sm-6 coll-exsm-12">
-                        <div class="card publication__card">
-                            <div class="card__content mt-30">
-                                <a href="" class="publication__link card__h4 h-4">Currency control is dead, long live
-                                    currency control!
-                                </a>
-                                <h5 class="card__h5">June 14, 2018</h5>
-                                <p class="card__text">Experts hold conferences, round tables and other events on
-                                    "liberalization of currency legislation." Lawyers-experts-novelists rub their
-                                    fingers about "ctrl + c / ctrl + v".</p>
-                            </div>
-                        </div>
+                    <div class="tab-pane fade" id="pills-articles" role="tabpanel" aria-labelledby="pills-articles-tab">
+                        ...
                     </div>
                 </div>
-                <a href="" class="publication__link btn-blue h-4">More publications</a>
-            </section>
+            </div>
         </div>
-    </div>
-    <div class="footer-wrap">
-        <div class="container">
-            <footer class="footer">
-                <div class="footer__section">
-                    <div class="footer__location">
-                        <h4 class="footer__city footer-style-text">Kyiv, Mechnikova str, 14/1</h4>
-                        <a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+14%2F1,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.436795,30.5305163,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf07295b8e39:0x17b2112e2dc0e7a!8m2!3d50.436795!4d30.532705"
-                            class="footer__link-map" target="_blank">
-                            <h3 class="footer__h3 h3-caps">On map</h3>
-                        </a>
+        <div class="footer-wrap">
+            <div class="container">
+                <footer class="footer">
+                    <div class="footer__section">
+                        <div class="footer__location">
+                            <h4 class="footer__city footer-style-text">Kyiv, Mechnikova str, 14/1</h4>
+                            <a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+14%2F1,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.436795,30.5305163,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf07295b8e39:0x17b2112e2dc0e7a!8m2!3d50.436795!4d30.532705"
+                                class="footer__link-map" target="_blank">
+                                <h3 class="footer__h3 h3-caps">On map</h3>
+                            </a>
+                        </div>
+                        <div class="footer__contacts">
+                            <a href="https://www.facebook.com/Hillel.IT.School" class="footer__link-facebook"
+                                target="_blank"><img src="../assets/footer/facebook-blue.svg" alt="facebook"
+                                    class="footer__img-facebook"></a>
+                            <h4 class="footer__call h-4">0800 211 927</h4>
+                            <a href="" class="footer__link-mail">
+                                <h4 class="footer__link-mail-address  h-4">contact@forstudy.space</h4>
+                            </a>
+                        </div>
                     </div>
-                    <div class="footer__contacts">
-                        <a href="https://www.facebook.com/Hillel.IT.School" class="footer__link-facebook"
-                            target="_blank"><img src="../assets/footer/facebook-blue.svg" alt="facebook"
-                                class="footer__img-facebook"></a>
-                        <h4 class="footer__call h-4">0800 211 927</h4>
-                        <a href="" class="footer__link-mail">
-                            <h4 class="footer__link-mail-address  h-4">contact@forstudy.space</h4>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer__copyright footer-style-text">© 2021 HLEGAL Law company, LLC</div>
-            </footer>
+                    <div class="footer__copyright footer-style-text">© 2021 HLEGAL Law company, LLC</div>
+                </footer>
+            </div>
         </div>
-    </div>
 </body>
 
 </html>

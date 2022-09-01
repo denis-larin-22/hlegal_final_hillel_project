@@ -6,7 +6,7 @@ a {
 }
 .header {
     width: 100%;
-    padding: 45px 0 0 0;
+    padding: 45px 0 60px 0;
     position: relative;
     z-index: 10;
     display: grid;
@@ -183,7 +183,7 @@ a {
 
 @media screen and (max-width: $exsm) {
     .header {
-        padding: 0;
+        padding: 0 0 9px 0;
         &__panel {
             position: relative;
             padding: 10px 0;
@@ -196,6 +196,11 @@ a {
                 left: -15px;
                 background-color: rgba(245, 245, 250, 0.2);
                 z-index: -1;
+            }
+        }
+        &__panel-light {
+            &::after {
+                background-color: $grey-bg;
             }
         }
         &__city {

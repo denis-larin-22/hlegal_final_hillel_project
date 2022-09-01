@@ -1,0 +1,70 @@
+// Tabs 
+.tabs {
+    padding-top: 32px;
+}
+.nav {
+    background-color: $grey-separator;
+    width: fit-content;
+    border-radius: $b-radius;
+    padding: 2px; 
+    &-link {
+        color: $indigo-main;
+        &:hover {
+            background-color: $grey-bg;
+            color: $indigo-main;
+        }
+    }
+    &-pills .nav-link.active {
+        color: $indigo-main; 
+        background-color: $white;
+        border-radius: $b-radius;
+    }
+}
+
+// Carousel
+.grey-wrap {
+    background-color: $grey-bg;
+}
+// .carousel {
+//     &__img-wrap {
+//         max-width: 370px;
+//         border-radius: $b-radius;
+//         background-color: $white;
+//         padding: 25px 0;
+//     }
+// }
+// .carousel-indicators [data-bs-target] {
+//     display: inline-block;
+//     width: 19px;
+//     background: $blue-regular;
+//     border-radius: 50%;
+
+// }
+.carousel {
+    gap: 30px 0;
+    padding: 30px 0;
+    &-img {
+        margin: 0 auto;
+        @media screen and (max-width: 820px) {
+            max-width: 110px;
+            max-height: 40px;
+        }
+      &-wrap {
+        width: 22%;
+        background: $white;
+        border-radius: $b-radius;
+        padding: 25px 0;
+      }  
+    }
+    &-indicators {
+        position: relative;
+        margin: 0;
+    }
+    &-indicators [data-bs-target] {
+        border: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background: $blue-regular;
+    }
+}
