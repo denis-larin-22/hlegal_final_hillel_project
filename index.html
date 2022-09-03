@@ -132,35 +132,48 @@
     </div>
 
     <section class="container">
-      <ul class="nav nav-tabs d-flex flex-column" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="consistent-tab" data-bs-toggle="tab" data-bs-target="#consistent"
-            type="button" role="tab" aria-controls="home" aria-selected="true">Consistent</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="customer-tab" data-bs-toggle="tab" data-bs-target="#customer" type="button"
-            role="tab" aria-controls="customer" aria-selected="false">Customer oriented</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="innovative-tab" data-bs-toggle="tab" data-bs-target="#innovative" type="button"
-            role="tab" aria-controls="innovative" aria-selected="false">Innovative</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="business-tab" data-bs-toggle="tab" data-bs-target="#business" type="button"
-            role="tab" aria-controls="business" aria-selected="false">Business oriented</button>
-        </li>
-      </ul>
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="consistent" role="tabpanel" aria-labelledby="consistent-tab">
-          <h2 class="h-2">We turn the idea of legal services</h2>
-          <p class="slider-text">Consolidating many years of experience and practice, the company's lawyers accompany
-            complex projects and achieve a number of important decisions for the industry. Many of them form the
-            practice of applying the law of the sea in Ukraine.</p>
+      <div class="tab d-flex align-items-center justify-content-center">
+        <nav class="tab__wrap">
+          <div class="tab__nav d-flex" id="nav-tab" role="tablist">
+            <button class="tab__link lg theme-light-text-gray active" id="nav-consistent-tab" data-bs-toggle="tab"
+              data-bs-target="#nav-consistent" type="button" role="tab" aria-controls="nav-consistent"
+              aria-selected="true">Consistent</button>
+            <button class="tab__link lg theme-light-text-gray" id="nav-customer-tab" data-bs-toggle="tab"
+              data-bs-target="#nav-customer" type="button" role="tab" aria-controls="nav-customer"
+              aria-selected="false">Customer oriented</button>
+            <button class="tab__link lg theme-light-text-gray" id="nav-innovative-tab" data-bs-toggle="tab"
+              data-bs-target="#nav-innovative" type="button" role="tab" aria-controls="nav-innovative"
+              aria-selected="false">Innovative</button>
+            <button class="tab__link lg theme-light-text-gray" id="nav-business-tab" data-bs-toggle="tab"
+              data-bs-target="#nav-business" type="button" role="tab" aria-controls="nav-business"
+              aria-selected="false">Business oriented</button>
+          </div>
+        </nav>
+        <div class="tab-content d-flex flex-column " id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-consistent" role="tabpanel"
+            aria-labelledby="nav-consistent-tab">
+            <h2 class="h-2 theme-dark pb-30">We turn the idea of legal services</h2>
+            <p class="slider-text theme-dark">Consolidating many years of experience and practice, the company's lawyers
+              accompany complex projects and achieve a number of important decisions for the industry. Many of them form
+              the practice of applying the law of the sea in Ukraine.</p>
+          </div>
+          <div class="tab-pane fade slider-text theme-dark" id="nav-customer" role="tabpanel"
+            aria-labelledby="nav-customer-tab">Lorem ipsum
+            dolor sit, amet consectetur adipisicing elit. Enim adipisci ipsa, nulla a sequi, ipsam alias eaque officiis
+            veritatis reiciendis, dignissimos voluptatem! Voluptatibus ducimus quas iste dolorum cum totam dicta.</div>
+          <div class="tab-pane fade slider-text theme-dark" id="nav-innovative" role="tabpanel"
+            aria-labelledby="nav-innovative-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            corrupti
+            quibusdam fugit voluptatum repudiandae quod. Ab iure accusantium debitis. Possimus doloremque sunt
+            doloribus,
+            veritatis quibusdam modi voluptatibus! Dolorum, molestiae velit.</div>
+          <div class="tab-pane fade slider-text theme-dark" id="nav-business" role="tabpanel"
+            aria-labelledby="nav-business-tab">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit beatae
+            similique nam amet dolor dolorum reiciendis omnis, commodi molestiae quasi maxime, nemo hic! Nam earum culpa
+            doloribus iste quas omnis!</div>
         </div>
-        <div class="tab-pane fade" id="customer" role="tabpanel" aria-labelledby="customer-tab">2</div>
-        <div class="tab-pane fade" id="innovative" role="tabpanel" aria-labelledby="innovative-tab">3</div>
-        <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="business-tab">4</div>
       </div>
+
     </section>
 
     <section class="items container">
