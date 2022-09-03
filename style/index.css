@@ -1621,6 +1621,15 @@ a:hover {
   border-radius: 12px;
   padding: 25px 0;
 }
+@media screen and (max-width: 576px) {
+  .carousel-img-wrap {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.carousel-content {
+  display: flex;
+}
 .carousel-indicators {
   position: relative;
   margin: 0;
@@ -1631,6 +1640,22 @@ a:hover {
   width: 16px;
   border-radius: 50%;
   background: #24A3FF;
+}
+
+.d-none-lg {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .d-none-sm {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .d-show-sm {
+    display: block;
+  }
 }
 
 .modal-content {
