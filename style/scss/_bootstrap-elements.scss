@@ -54,3 +54,13 @@
         background: $blue-regular;
     }
 }
+
+// Modal 
+
+.modal-content {
+    background-color: $grey-bg;
+    padding: 30px;
+}
+.btn-close {
+    align-self: flex-end;
+}

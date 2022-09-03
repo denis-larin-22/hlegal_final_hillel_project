@@ -261,6 +261,7 @@ body {
   color: rgb(255, 255, 255);
   padding: 18px 30px;
   border-radius: 12px;
+  border: none;
   background-color: #24A3FF;
   box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
   transition: 0.4s ease;
@@ -1630,4 +1631,13 @@ a:hover {
   width: 16px;
   border-radius: 50%;
   background: #24A3FF;
+}
+
+.modal-content {
+  background-color: #F5F5FA;
+  padding: 30px;
+}
+
+.btn-close {
+  align-self: flex-end;
 }/*# sourceMappingURL=index.css.map */

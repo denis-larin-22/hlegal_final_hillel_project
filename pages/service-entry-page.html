@@ -134,7 +134,55 @@
                         the same type
                         and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a
                         good candidate with experience in the field of information technology in Ukraine.</p>
-                    <a href="#" class="btn-blue h-4 theme-dark">Free consultation</a>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn-blue h-4 theme-dark" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Free consultation
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <button type="button" class="btn-close btn-close_color" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+
+                                <div class="form">
+                                    <form class="form text-regular" action="https://fom.in.ua/echo" method="post">
+                                        <h2 class="h-2 form__h2 theme-text-gradient pb-30">We would like to help you
+                                        </h2>
+                                        <div class="mb-3 ">
+                                            <input type="text" name="name" class="form-control form__name"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name"
+                                                required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <textarea type="text" name="message" class="form-control form__message"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="Message" required></textarea>
+                                        </div>
+                                        <div id="emailHelp" class="form__text form-text h3-caps pb-15">How to answer
+                                            you?</div>
+                                        <div class="mb-3">
+                                            <input type="text" name="call" class="form-control form__call"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="Phone number" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="email" name="mail" class="form-control form__mail"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"
+                                                required>
+                                        </div>
+
+                                        <button type="submit" class="form__btn btn-blue h-4">Send message</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <section class="list theme-dark container-page-service">
