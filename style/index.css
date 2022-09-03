@@ -118,6 +118,34 @@ body {
   margin: 0 auto;
 }
 
+.link_hover {
+  color: #24A3FF;
+  transition: 0.5s ease;
+}
+.link_hover:hover {
+  color: #F0145A;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.pb-6 {
+  padding-bottom: 6px;
+}
+
 .lg {
   font-weight: 700;
   font-size: 38px;
@@ -297,7 +325,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 576px) {
+  .wrap-gradient {
+    margin-bottom: 20px;
+  }
 }
 .wrap-gradient__shadow-1 {
   border-radius: 0 0 12px 12px;
@@ -341,6 +374,7 @@ body {
 .head__h1 {
   color: rgb(255, 255, 255);
   position: relative;
+  text-align: center;
 }
 .head__link {
   position: relative;
@@ -383,9 +417,6 @@ body {
   gap: 30px;
 }
 
-.items {
-  padding-top: 38px;
-}
 @media screen and (max-width: 576px) {
   .items__h2 {
     font-weight: 700;
@@ -397,18 +428,10 @@ body {
   display: inline-block;
 }
 
-.link_hover {
-  color: #24A3FF;
-  transition: 0.5s ease;
-}
-.link_hover:hover {
-  color: #F0145A;
-}
-
 .items-flex {
   display: flex;
   flex-wrap: wrap;
-  gap: 87px 0;
+  gap: 60px 0;
   margin: 0 -10px;
   padding: 60px 0;
 }
@@ -431,12 +454,50 @@ body {
   padding: 30px 0 15px 0;
 }
 
+.worker {
+  gap: 0 20px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+@media screen and (max-width: 850px) {
+  .worker {
+    flex-direction: column;
+  }
+}
+.worker__content {
+  padding: 30px;
+}
+.worker__img {
+  max-width: 400px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 1124px) {
+  .worker__img {
+    border-radius: 12px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .worker__img {
+    max-width: 100%;
+    max-height: 500px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .worker__text {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
 .tiles {
-  padding-bottom: 60px;
+  padding: 30px 0 60px 0;
 }
 @media screen and (max-width: 1440px) {
   .tiles {
-    padding-bottom: 0;
+    padding: 30px 0;
   }
 }
 .tiles__text {
@@ -480,6 +541,7 @@ body {
 
 .cards {
   border-bottom: 2px solid #E6E6F0;
+  padding-top: 30px;
 }
 .cards__h3 {
   color: #24A3FF;
@@ -1240,10 +1302,6 @@ a:hover {
   display: inline-block;
 }
 
-.mt-30 {
-  margin-top: 30px;
-}
-
 .pub-entry {
   padding: 30px 0;
   max-width: 1360px;
@@ -1303,18 +1361,6 @@ a:hover {
 }
 .pub-entry__link:hover {
   background-color: #EDEDF7;
-}
-
-.pb-30 {
-  padding-bottom: 30px;
-}
-
-.pb-15 {
-  padding-bottom: 15px;
-}
-
-.mb-30 {
-  margin-bottom: 30px;
 }
 
 .page-about {
