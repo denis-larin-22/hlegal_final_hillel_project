@@ -131,21 +131,35 @@
       </div>
     </div>
 
-    <section class="container slider">
-      <div class="slider__nav">
-        <a href="#" class="slider__link lg">Consistent</a>
-        <a href="#" class="slider__link lg">Customer oriented</a>
-        <a href="#" class="slider__link lg">Innovative</a>
-        <a href="#" class="slider__link lg">Business oriented</a>
-      </div>
-      <div class="slider__content">
-        <h2 class="h-2">We turn the idea of legal services</h2>
-        <p class="slider-text">
-          Consolidating many years of experience and practice, the company's
-          lawyers accompany complex projects and achieve a number of important
-          decisions for the industry. Many of them form the practice of
-          applying the law of the sea in Ukraine.
-        </p>
+    <section class="container">
+      <ul class="nav nav-tabs d-flex flex-column" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="consistent-tab" data-bs-toggle="tab" data-bs-target="#consistent"
+            type="button" role="tab" aria-controls="home" aria-selected="true">Consistent</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="customer-tab" data-bs-toggle="tab" data-bs-target="#customer" type="button"
+            role="tab" aria-controls="customer" aria-selected="false">Customer oriented</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="innovative-tab" data-bs-toggle="tab" data-bs-target="#innovative" type="button"
+            role="tab" aria-controls="innovative" aria-selected="false">Innovative</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="business-tab" data-bs-toggle="tab" data-bs-target="#business" type="button"
+            role="tab" aria-controls="business" aria-selected="false">Business oriented</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="consistent" role="tabpanel" aria-labelledby="consistent-tab">
+          <h2 class="h-2">We turn the idea of legal services</h2>
+          <p class="slider-text">Consolidating many years of experience and practice, the company's lawyers accompany
+            complex projects and achieve a number of important decisions for the industry. Many of them form the
+            practice of applying the law of the sea in Ukraine.</p>
+        </div>
+        <div class="tab-pane fade" id="customer" role="tabpanel" aria-labelledby="customer-tab">2</div>
+        <div class="tab-pane fade" id="innovative" role="tabpanel" aria-labelledby="innovative-tab">3</div>
+        <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="business-tab">4</div>
       </div>
     </section>
 
