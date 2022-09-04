@@ -50,7 +50,6 @@ a {
         align-items: center;
         gap: 6px;
     }
-
     &__navigation {
         grid-area: navigation;
         display: flex;
@@ -64,7 +63,6 @@ a {
             display: none;
         }
     }
-
     &__city {
         display: flex;
         align-items: center;
@@ -91,7 +89,7 @@ a {
             @extend %circle;
         }
     }
-// точки
+// Poits
     &-circle-start_grey {
         &::before {
             content: '';
@@ -111,14 +109,12 @@ a {
             background-color: $grey-separator;
         }
     }
-
     &__facebook_hover {
         transition: .5s ease;
         &:hover {
             fill: $accent;
         }
     }
-    
     &__link {
         transition: 0.2s linear;
         padding-bottom: 3px;
@@ -145,7 +141,6 @@ a {
         }
     }
 }
-
 .lang {
     background-color: transparent;
     padding: 5px 7px;
@@ -165,7 +160,6 @@ a {
         background-color: $accent;
     }
 }
-
 .link_active {
     color: $accent;
     padding-bottom: 3px;

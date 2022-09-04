@@ -4,7 +4,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
+// Page-containers
 .container {
     margin: 0 auto;
     width: 100%;
@@ -41,12 +41,12 @@ body {
         padding: 0 $container-space-sm;
     }
 }
-
+// Tiles-container
 .container-tiles {
     max-width: 1720px + 40px;
     margin: 0 auto;
 }
-
+// Hover-animation
 .link_hover {
     color: $blue-regular;
     transition: 0.5s ease;
@@ -55,18 +55,17 @@ body {
       }
   }
 
-//   margin, padding
-
+// margin, padding
 .mt-30 {
     margin-top: 30px;
 }
 .mb-30 {
     margin-bottom: 30px;
 }
+
 .pb-30 {
     padding-bottom: 30px;
 }
-
 .pb-15 {
     padding-bottom: 15px;
 }

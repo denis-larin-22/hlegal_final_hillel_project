@@ -1,7 +1,4 @@
 // Tabs 
-.tabs {
-    padding-top: 32px;
-}
 .nav {
     background-color: $grey-separator;
     width: fit-content;
@@ -25,7 +22,6 @@
 .grey-wrap {
     background-color: $grey-bg;
 }
-
 .carousel {
     gap: 30px 0;
     padding: 30px 0;
@@ -74,10 +70,9 @@
     @media screen and (max-width: $exsm) {
         display: block;  
     }
-
 }
-// Modal 
 
+// Modal 
 .modal-content {
     background-color: $grey-bg;
     padding: 30px;

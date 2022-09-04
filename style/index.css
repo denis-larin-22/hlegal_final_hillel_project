@@ -433,7 +433,7 @@ body {
 .tab__link:hover {
   color: #F0145A;
 }
-.tab-content {
+.tab-attachments {
   max-width: 861px;
   min-height: 303px;
   padding: 0 0 0 60px;
@@ -441,7 +441,7 @@ body {
   border-left: 4px solid #E6E6F0;
 }
 @media screen and (max-width: 768px) {
-  .tab-content {
+  .tab-attachments {
     padding: 60px 0 0 0;
     border-left: none;
     border-top: 4px solid #E6E6F0;
@@ -474,10 +474,6 @@ body {
   }
 }
 
-.item {
-  display: flex;
-  flex-direction: column;
-}
 .item__img {
   width: 92px;
 }
@@ -535,7 +531,6 @@ body {
   text-transform: uppercase;
 }
 .tiles__set {
-  display: flex;
   flex-wrap: wrap;
   border-radius: 12px;
   overflow: hidden;
@@ -557,6 +552,7 @@ body {
 
 .section-cards-wrap {
   background-color: #F5F5FA;
+  padding-top: 30px;
 }
 
 .flex-cards {
@@ -569,7 +565,6 @@ body {
 
 .cards {
   border-bottom: 2px solid #E6E6F0;
-  padding-top: 30px;
 }
 .cards__h3 {
   color: #24A3FF;
@@ -585,9 +580,14 @@ body {
   min-height: 430px;
   padding-bottom: 30px;
 }
+@media screen and (max-width: 1314px) {
+  .card {
+    min-height: 480px;
+  }
+}
 @media screen and (max-width: 1120px) {
   .card {
-    min-height: 450px;
+    min-height: 465px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -597,7 +597,14 @@ body {
 }
 @media screen and (max-width: 768px) {
   .card {
-    min-height: 490px;
+    min-height: 522px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
   }
 }
 @media screen and (max-width: 768px) {
@@ -606,7 +613,7 @@ body {
   }
 }
 @media screen and (max-width: 576px) {
-  .card {
+  .card_height-sm {
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
     min-height: fit-content;
@@ -1151,7 +1158,7 @@ a:hover {
 .main__text {
   max-width: 1360px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding-bottom: 60px;
 }
 @media screen and (max-width: 1440px) {
   .main__text {
@@ -1221,7 +1228,7 @@ a:hover {
 }
 
 .employee {
-  padding: 65px 0 60px 0;
+  padding-bottom: 60px;
   max-width: 1360px;
   margin: 0 auto;
   display: grid;
@@ -1571,10 +1578,6 @@ a:hover {
 }
 .form__btn:active {
   background-color: #006CCF;
-}
-
-.tabs {
-  padding-top: 32px;
 }
 
 .nav {

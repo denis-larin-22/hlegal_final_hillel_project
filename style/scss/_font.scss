@@ -6,8 +6,7 @@
     line-height: $l;
 }
 
-// font-settings
-
+// Font-settings
 .lg {
     @include font-setting (700, 38px, 46px)
 }
@@ -38,7 +37,7 @@
     @include font-setting (400, 18px, 26px);
 }
 
-.text-link{
+.text-link {
     @include font-setting (400, 16px, 20px);
 }
 

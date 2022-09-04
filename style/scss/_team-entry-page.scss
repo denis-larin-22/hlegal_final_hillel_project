@@ -1,4 +1,3 @@
-// DONE
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -7,9 +6,8 @@
 .main-wrap {
     flex-grow: 1;
 }
-
 .employee {
-    padding: 65px 0 60px 0;
+    padding-bottom: 60px;
     max-width: 1360px;
     margin: 0 auto;
     display: grid;

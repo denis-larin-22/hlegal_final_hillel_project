@@ -1,10 +1,9 @@
-// DONE
 .main {
     &__text {
         @extend %gradient-text-accent;
         max-width: 1360px;
         margin: 0 auto;
-        padding: 60px 0;
+        padding-bottom: 60px;
         @media screen and (max-width: $lg) {
             max-width: 1080px;
         }

@@ -107,7 +107,7 @@
       @extend %gradient-text-accent;
     }
   }
-  &-content {
+  &-attachments {
     max-width: 861px;
     min-height: 303px;
     padding: 0 0 0 60px;
@@ -148,8 +148,6 @@
 }
 
 .item {
-  display: flex;
-  flex-direction: column;
   &__img {
     width: 92px;
   }
@@ -198,9 +196,8 @@
     text-transform: uppercase;
   }
   &__set {
-    display: flex;
     flex-wrap: wrap;
-    border-radius: 12px;
+    border-radius: $b-radius;
     overflow: hidden;
     @media screen and (max-width: $lg) {
       border-radius: 0px;
@@ -218,7 +215,8 @@
 }
 
 .section-cards-wrap {
-  background-color: #F5F5FA;;;
+  background-color: #F5F5FA;
+  padding-top: 30px;
 }
 
 .flex-cards {
@@ -231,7 +229,6 @@
 
 .cards {
   border-bottom: 2px solid $grey-separator;
-  padding-top: 30px;
   &__h3 {
     color: $blue-regular;
     padding-bottom: 10px;
@@ -251,23 +248,29 @@
   overflow: hidden;
   min-height: 430px;
   padding-bottom: 30px;
-  // mw 1120px, иммено с этой ширины карточки начинают иметь разную высоту изза контента внутри
+  // mw 1314px, иммено с этой ширины карточки начинают иметь разную высоту изза контента внутри
+  @media screen and (max-width: 1314px){
+    min-height: 480px;
+  }
   @media screen and (max-width: 1120px) {
-    min-height: 450px;
+    min-height: 465px;
   }
   @media screen and (max-width: $md) {
     min-height: 530px;
   }
   @media screen and (max-width: $sm) {
-    min-height: 490px;
+    min-height: 522px;
+  }
+  @media screen and (max-width: $exsm) {
+    min-height: fit-content;
   }
   &_height-sm {
     @media screen and (max-width: $sm) {
       min-height: 381px;
     }
-  }
-  @media screen and (max-width: $exsm) {
-    min-height: fit-content;
+    @media screen and (max-width: $exsm) {
+      min-height: fit-content;
+    }
   }
   &__img {
     width: 100%;
