@@ -118,12 +118,15 @@ body {
   margin: 0 auto;
 }
 
-.link_hover {
+.link_hover, path, circle {
   color: #24A3FF;
   transition: 0.5s ease;
 }
-.link_hover:hover {
+.link_hover:hover, path:hover, circle:hover {
   color: #F0145A;
+}
+.link_hover:hover path, path:hover path, circle:hover path {
+  stroke: #F0145A;
 }
 
 .mt-30 {
@@ -227,17 +230,6 @@ body {
   line-height: 20px;
 }
 
-.cards__h3::after {
-  content: "";
-  border: 2px solid #F0145A;
-  border-width: 0 2px 2px 0;
-  transform: rotate(-45deg);
-  display: inline-block;
-  padding: 3px;
-  margin-left: 5px;
-  vertical-align: initial;
-}
-
 .employee__mail::before, .employee__mail::after, .header-circle_grey::after, .header-circle_grey::before, .header-circle-start_grey::before, .header__call::after, .header__call::before {
   display: block;
   width: 6px;
@@ -246,7 +238,7 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-.pub-entry__h1, .employee__h1, .main__text, .service-item__h1, .theme-text-gradient, .cards__h2, .items__h2, .tab__link:focus {
+.active.active-color, .pub-entry__h1, .employee__h1, .main__text, .service-item__h1, .theme-text-gradient, .cards__h2, .items__h2, .tab__link:focus {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -380,7 +372,10 @@ body {
 .head__link {
   position: relative;
 }
-.head__link:hover {
+.head__link:hover circle {
+  stroke: #F0145A;
+}
+.head__link:hover path {
   stroke: #F0145A;
 }
 

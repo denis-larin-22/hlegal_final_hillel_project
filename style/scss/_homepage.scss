@@ -2,7 +2,7 @@
   background: $gradient-supersoft;
   min-height: 100vh;
   width: 100%;
-  border-radius: 0 0 12px 12px;
+  border-radius: 0 0 $b-radius $b-radius;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@
     margin-bottom: 20px;
   }
   &__shadow-1 {
-    border-radius: 0 0 12px 12px;
+    border-radius: 0 0 $b-radius $b-radius;
     background-color: #147ec9;
     height: 10px;
     width: calc(100% - 40px);
@@ -58,7 +58,10 @@
   }
   &__link {
     position: relative;
-    &:hover {
+    &:hover circle {
+      stroke: $accent;
+    }
+    &:hover path {
       stroke: $accent;
     }
   }
@@ -133,6 +136,7 @@
   &__h3 {
     display: inline-block;
   }
+  
 }
 
 .items-flex {
@@ -233,7 +237,6 @@
     color: $blue-regular;
     padding-bottom: 10px;
     &::after {
-      @extend %arrow;
       border-color: $blue-regular;
     }
   }

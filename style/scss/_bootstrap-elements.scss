@@ -17,7 +17,13 @@
         border-radius: $b-radius;
     }
 }
+.active.active-color {
+    @extend %gradient-text-accent;
+}
 
+// .active {
+//     @extend %gradient-text-accent;
+// }
 // Carousel
 .grey-wrap {
     background-color: $grey-bg;
