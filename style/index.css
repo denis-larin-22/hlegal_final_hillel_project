@@ -238,7 +238,7 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-.active.active-color, .pub-entry__h1, .employee__h1, .main__text, .service-item__h1, .theme-text-gradient, .cards__h2, .items__h2, .tab__link:focus {
+.tab__link.active, .pub-entry__h1, .employee__h1, .main__text, .service-item__h1, .theme-text-gradient, .cards__h2, .items__h2 {
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

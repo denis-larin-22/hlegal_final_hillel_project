@@ -17,9 +17,15 @@
         border-radius: $b-radius;
     }
 }
-.active.active-color {
+.tab__link.active {
     @extend %gradient-text-accent;
 }
+// .active.active-color {
+//     @extend %gradient-text-accent;
+// }
+// .active {
+//     @extend %gradient-text-accent;
+// }
 
 // .active {
 //     @extend %gradient-text-accent;

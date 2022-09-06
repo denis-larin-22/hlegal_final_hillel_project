@@ -106,9 +106,9 @@
     &:hover {
       color: $accent;
     }
-    &:focus {
-      @extend %gradient-text-accent;
-    }
+    // &:focus {
+    //   @extend %gradient-text-accent;
+    // }
   }
   &-attachments {
     max-width: 861px;
